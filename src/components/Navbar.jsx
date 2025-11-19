@@ -4,7 +4,7 @@ import '../App.css'
 export default function Navbar() {
     return (
         <nav>
-            <h2>Mini Blog</h2>
+            <h2>Fall 2025 Blog</h2>
             <div>
                 <Link to="/">Home</Link>
                 <Link to="/create">Create Post</Link>
