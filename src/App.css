@@ -1,0 +1,177 @@
+/* App.css - centralized styling */
+
+/* GLOBAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f9f9f9;
+    color: #222;
+    padding-bottom: 50px;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 25px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav h2 {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* PAGE TITLES */
+h1 {
+    margin: 25px;
+    font-size: 1.8rem;
+}
+
+/* POST LIST CONTAINER */
+.posts-page {
+    max-width: 700px;
+    margin: auto;
+    padding: 10px;
+}
+
+.search-sort {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.search-sort input,
+.search-sort select {
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* POST CARD */
+.post-card {
+    background: #fff;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+    transition: 0.2s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.post-card h2 {
+    margin-bottom: 10px;
+}
+
+.post-card p {
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* POST PAGE */
+.post-page {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.post-page img {
+    max-width: 100%;
+    margin: 10px 0;
+    border-radius: 6px;
+}
+
+/* BUTTONS */
+button {
+    padding: 10px 15px;
+    background: #007bff;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    font-size: 0.95rem;
+    margin-right: 5px;
+}
+
+button:hover {
+    background: #005ecb;
+}
+
+button:active {
+    background: #004b9c;
+}
+
+/* FORMS */
+form {
+    max-width: 700px;
+    background: #fff;
+    padding: 25px;
+    margin: 25px auto;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+}
+
+/* COMMENTS */
+.comment-box {
+    border-top: 1px solid #ddd;
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment-box input {
+    width: 70%;
+}
